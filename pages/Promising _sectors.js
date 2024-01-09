@@ -33,7 +33,18 @@ export default function PromisingSectors() {
           <h2 className="section-title2">
             <span>القطاعات الواعدة</span>
           </h2>
-          <div className="col-md-6">
+          <div>
+            <a className="investbtn2" href="#">عرض الكل</a>
+            <div className="owl-custom-control">
+                    <button type="button" role="presentation" className="owl-prev swiper-prev" onClick={goPrev}>
+                    <FontAwesomeIcon icon={faChevronRight} />
+                    </button>
+                    <button type="button" role="presentation" className="owl-prev swiper-next" onClick={goNext}>
+                    <FontAwesomeIcon icon={faChevronLeft} />
+                    </button>
+            </div>
+          </div> 
+          {/* <div className="col-md-6">
             <div className="listAll-wrapper2">
               <a className="btn" href="#">
                 عرض الكل
@@ -57,7 +68,7 @@ export default function PromisingSectors() {
                 </button>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
         <Swiper
           slidesPerView={4}
@@ -70,12 +81,22 @@ export default function PromisingSectors() {
             delay: 2500,
             disableOnInteraction: false,
           }}
+          breakpoints={{
+            1440: {
+              slidesPerView: 4,
+              spaceBetween: 10
+          },
+          414: {
+              slidesPerView: 1,
+              spaceBetween: 0
+          }
+        }
+        }
           modules={[Pagination]}
           className="swiper-container2"
         >
           <SwiperSlide>
-            <div class="promising_card">
-              <div className="owl-item">
+            <div class="promising_card">              
                 <a href="#"></a>
                 <div className="icon-box">
                   <a href="#">
@@ -87,13 +108,11 @@ export default function PromisingSectors() {
                     <a href="#">أنشطة تجارة الجملة والتجزئة</a>
                   </h4>
                   <p>وتشمل ( البيع بالجملة والتجزئة لجميع السلع)</p>
-                </div>
-              </div>
+                </div>              
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div class="promising_card">
-              <div className="owl-item">
+            <div class="promising_card">              
                 <a href="#"></a>
                 <div className="icon-box">
                   <a href="#">
@@ -107,11 +126,10 @@ export default function PromisingSectors() {
                   <p>وتشمل ( البيع بالجملة والتجزئة لجميع السلع)</p>
                 </div>
               </div>
-            </div>
           </SwiperSlide>
+
           <SwiperSlide>
             <div class="promising_card">
-              <div className="owl-item">
                 <a href="#"></a>
                 <div className="icon-box">
                   <a href="#">
@@ -125,11 +143,10 @@ export default function PromisingSectors() {
                   <p>وتشمل ( البيع بالجملة والتجزئة لجميع السلع)</p>
                 </div>
               </div>
-            </div>
           </SwiperSlide>
+
           <SwiperSlide>
             <div class="promising_card">
-              <div className="owl-item">
                 <a href="#"></a>
                 <div className="icon-box">
                   <a href="#">
@@ -143,11 +160,10 @@ export default function PromisingSectors() {
                   <p>وتشمل ( البيع بالجملة والتجزئة لجميع السلع)</p>
                 </div>
               </div>
-            </div>
           </SwiperSlide>
+
           <SwiperSlide>
             <div class="promising_card">
-              <div className="owl-item">
                 <a href="#"></a>
                 <div className="icon-box">
                   <a href="#">
@@ -161,7 +177,6 @@ export default function PromisingSectors() {
                   <p>وتشمل ( البيع بالجملة والتجزئة لجميع السلع)</p>
                 </div>
               </div>
-            </div>
           </SwiperSlide>
         </Swiper>
         <div className="wrapper">

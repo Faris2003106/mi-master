@@ -10,12 +10,12 @@ import { Pagination, Autoplay } from 'swiper/modules';
 SwiperCore.use([Navigation]);
 
 const goPrev = () => {
-  const swiper = document.querySelector('.swiper-container').swiper;
+  const swiper = document.querySelector('.swiper-container1').swiper;
   swiper.slidePrev();
 };
 
 const goNext = () => {
-  const swiper = document.querySelector('.swiper-container').swiper;
+  const swiper = document.querySelector('.swiper-container1').swiper;
   swiper.slideNext();
 };
 export default function InvestOppor() {
@@ -52,9 +52,20 @@ export default function InvestOppor() {
             delay:2500,
             disableOnInteraction: false,
         }}
+            breakpoints={{
+                1440: {
+                    slidesPerView: 4,
+                    spaceBetween: 10
+                },
+                414: {
+                    slidesPerView: 1,
+                    spaceBetween: 60
+                }
+            }
+            }
             
             modules={[Pagination]}
-            className="swiper-container"
+            className="swiper-container1"
             >
                 <div className='wrapper'>
                     <div className='row'>
