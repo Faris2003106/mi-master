@@ -1,12 +1,19 @@
-import Footer from "./footer"
-import Header from "./header"
+import { useRouter } from 'next/router';
+// import Header from './header';
+import Footer from './footer';
+import SecondHeader from '@/pages/secondHeader';
 
-export default function mainLayout (props) {
-    return(
-        <>
-        <Header/>
-            {props.children}
-        <Footer/>
-        </>
-    )
-}
+const MainLayout = ({ children }) => {
+    const router = useRouter();
+    const showHeader = router.pathname !== '/';
+
+    return (
+    <>
+        {showHeader && <SecondHeader />}
+        {children}
+        <Footer />
+    </>
+    );
+};
+
+export default MainLayout;

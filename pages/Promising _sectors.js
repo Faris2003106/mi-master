@@ -1,4 +1,5 @@
 import Link from "next/link";
+import PromisingCard from "./promising_sectors_card";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faChevronRight,
@@ -44,31 +45,6 @@ export default function PromisingSectors() {
                     </button>
             </div>
           </div> 
-          {/* <div className="col-md-6">
-            <div className="listAll-wrapper2">
-              <a className="btn" href="#">
-                عرض الكل
-              </a>
-              <div className="owl-custom-control">
-                <button
-                  type="button"
-                  role="presentation"
-                  className="owl-prev swiper-prev2"
-                  onClick={goPrev}
-                >
-                  <FontAwesomeIcon icon={faChevronRight} />
-                </button>
-                <button
-                  type="button"
-                  role="presentation"
-                  className="owl-prev swiper-next2"
-                  onClick={goNext}
-                >
-                  <FontAwesomeIcon icon={faChevronLeft} />
-                </button>
-              </div>
-            </div>
-          </div> */}
         </div>
         <Swiper
           slidesPerView={4}
@@ -178,27 +154,7 @@ export default function PromisingSectors() {
                 </div>
               </div>
           </SwiperSlide>
-        </Swiper>
-        <div className="wrapper">
-          <div className="row"></div>
-          <div className="oppor_3">
-            <img
-              src="/images/img_06.png"
-              alt="background"
-              className="imgCover"
-            />
-            <div className="row">
-              <div className="col-md-12">
-                <div className="single-cat2-inner">
-                  <h2>التراخيص وإجراءات العمل</h2>
-                  <a href="#" className="oppor3_btn">
-                    اكتشف المزيد
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        </Swiper> 
       </section>
     </>
   );

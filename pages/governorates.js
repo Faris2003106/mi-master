@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
     faChevronRight,
@@ -33,7 +34,7 @@ export default function Governorates() {
                     <span>المحافظات</span>
                 </h2>
             <div>
-                    <a className="investbtn3" href="#">عرض الكل</a>
+                    <Link className="investbtn3" href="governoratesPage">عرض الكل</Link>
                 <div className="owl-custom-control">
                     <button type="button" role="presentation" className="owl-prev swiper-prev" onClick={goPrev}>
                     <FontAwesomeIcon icon={faChevronRight} />
@@ -119,7 +120,7 @@ export default function Governorates() {
                 </a>
                 </SwiperSlide>
                 <SwiperSlide>
-                <a href="#">
+                <Link href="yanbu">
                 <div className="card-image">
                     <h5 className="card-title">ينبع</h5>
                     <img
@@ -128,7 +129,7 @@ export default function Governorates() {
                     className="city-image"
                     />
                 </div>
-                </a>
+                </Link>
                 </SwiperSlide>
                 <SwiperSlide>
                 <a href="#">

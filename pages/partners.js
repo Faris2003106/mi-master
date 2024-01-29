@@ -20,16 +20,16 @@ export default function Partners() {
                 </div>
                 </div>
                 <Swiper
-                slidesPerView={6}
+                slidesPerView={5}
                 freeMode={true}
-                // loop={true}
-                // autoplay={{
-                //     delay: 2500,
-                //     disableOnInteraction: false,
-                // }}
+                loop={true}
+                autoplay={{
+                    delay: 2500,
+                    disableOnInteraction: false,
+                }}
                 breakpoints={{
                     1440: {
-                        slidesPerView: 6,
+                        slidesPerView: 5,
                         spaceBetween: 10
                     },
                     414: {

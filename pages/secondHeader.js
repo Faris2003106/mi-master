@@ -1,47 +1,35 @@
-import Image from 'next/image'
-import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
 import $ from 'jquery';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTwitter, faFacebook, faInstagram, faLinkedin,faPhone,faEnvelope } from '@fortawesome/free-brands-svg-icons';
-/*const links = ["عن المنصة", "الميزة النسبية للمنطقة", "القطاعات", "الفرص الاستثمارية","خارطة الفرص الاستثمارية","المكتبة الاقتصادية","تواصل معنا"];*/
-
-// Import Swiper React components
-import {Navigation , Scrollbar,A11y, Autoplay} from 'swiper/modules';
-import { Swiper, SwiperSlide } from 'swiper/react';
-// Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
-
-
-export default function Header() { 
-     // script for the changing header background color by scrolling
+import Link from 'next/link';
+export default function SecondHeader(){
+    // script for the changing header background color by scrolling
     // useEffect(() => {
     //     // Run this code when the component mounts
     //     $(window).on('scroll', function() {
     //     if ($(window).scrollTop() > 50) {
-    //         $('.header').addClass('active');
+    //         $('.SecondHeader').addClass('active');
     //     } else {
-    //         $('.header').removeClass('active');
+    //         $('.SecondHeader').removeClass('active');
     //     }
     //     });
     // }, []);
     const [active, setActive] = useState(false);
 
-  useEffect(() => {
+    useEffect(() => {
     // Run this code when the component mounts
     $(window).on('scroll', function() {
-      if ($(window).scrollTop() > 50) {
+    if ($(window).scrollTop() > 50) {
         setActive(true);
-      } else {
+    } else {
         setActive(false);
-      }
+    }
     });
-  }, []);
-    return (
+    }, []);
+    return(
         <>
-        <header >
+        <header>
         <div className='top-header'>
         <div className='header-info-left'>
             <ul>
@@ -61,8 +49,8 @@ export default function Header() {
         </div>
         </div>
         <hr/>
-        <div className={`header ${active ? 'active' : ''}`}>
-        <a href='#' className='logo'>
+        <div className={`SecondHeader ${active ? 'active' : ''}`}>
+        <a href='/' className='logo'>
         {active ? (
             <img src='/images/mi.png' alt='Logo' />
         ) : (
@@ -76,7 +64,7 @@ export default function Header() {
             <li><Link href="about">عن المنصة</Link></li>
             <li><a>الميزة النسبية للمنطقة +</a>
                 <ul className='drop-down'>
-                    <li><Link href="medina_region">منطقة المدينة المنورة</Link></li>
+                <li><Link href="medina_region">منطقة المدينة المنورة</Link></li>
                     <li><Link href="governoratesPage">المحافظات</Link></li>
                     <li><a href='#'>إمكانات السياحة</a></li>
                     <li><a href='#'>مزايا الاستثمار</a></li>
@@ -98,7 +86,7 @@ export default function Header() {
                     </li>
                 </ul>
             </li>
-            <li><Link href="secondHeader">الفرص الاستثمارية</Link></li>
+            <li><a href='#'>الفرص الاستثمارية</a></li>
             <li><a href='#'>خارطة الفرص الاستثمارية</a></li>
             <li><a href='#'>المكتبة الاقتصادية</a></li>
             <li><a href='#'>تواصل معنا</a></li>
@@ -109,21 +97,7 @@ export default function Header() {
             <a href='#' className='navbtn'>تسجيل</a>
             </div>}
     </div>
-    </header>
-    </>
-    )
+        </header>
+        </>
+    );
 }
-
-
-// import Image from 'next/image'
-
-// //import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// //import { faTwitter, faFacebook, faInstagram, faLinkedin,faPhone,faEnvelope } from '@fortawesome/free-brands-svg-icons';
-// /*const links = ["عن المنصة", "الميزة النسبية للمنطقة", "القطاعات", "الفرص الاستثمارية","خارطة الفرص الاستثمارية","المكتبة الاقتصادية","تواصل معنا"];*/
-// export default function Header() { 
-//     return (
-//  <div>
-//     <h1>test</h1>
-//  </div>
-//     );
-// }

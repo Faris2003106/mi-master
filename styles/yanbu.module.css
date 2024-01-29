@@ -1,0 +1,197 @@
+.about_City{
+    padding: 200px 0 50px 0;
+    /* padding-right: 5%;
+    padding-left: 4%; */
+    position: relative;
+    background-color: #f8f9fa !important;
+}
+.section_Title h2{
+    text-align: center;
+    color: #007d56;
+    font-size: 27px;
+    margin-bottom: 30px;
+}
+.city_image{
+    position: absolute;
+    width: 100%;
+    height: 520px;
+}
+.city_paragraph{
+    width: 50%;
+    height: 520px;
+    background-color: rgb(0 0 0 / 70%);
+    padding: 55px;
+    position: relative;
+    z-index: 1;
+}
+.city_paragraph h2{
+    color: #fff;
+    margin-top: 20px;
+    margin-bottom: 16px;
+}
+.city_paragraph p {
+    color: #fff;
+    text-align: justify;
+    line-height: 1.8rem;
+}
+.section_Title2{
+    margin-bottom: 50px;
+}
+.section_Title2 h2{
+    margin-top: 35px;
+    text-align: center;
+    color: #007d56;
+    font-size: 27px;
+    margin-bottom: 30px;
+}
+.section_Title2 hr{
+    width: 300px;
+    height: 2px;
+    background-color: rgb(0 0 0 / 5%);
+    display: block;
+    position: absolute;
+    left: calc(50% - 240px);
+}
+/* .section_Title2 .icon{
+    font-size: 30px;
+    background-color: #fff;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    line-height: 63px;
+    border: 5px solid #0000000d;
+    border-radius: 50%;
+    text-align: center;
+} */
+
+.city_indicators{
+    display: flex;
+    flex-wrap: wrap;
+}
+.single_list{
+    width: 25% !important;
+    position: relative;
+    padding: 25px 10px;
+    text-align: center;
+    width: 100%;
+    border-radius: 6px;
+    border-bottom: 1px solid #ececec;
+    border-left: 1px solid #ececec;
+}
+.single_img{
+    color: #5830e0;
+    font-size: 25px;
+    display: inline-block;
+    margin-bottom: 30px;
+    height: 100px;
+    width: 100px;
+    line-height: 100px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 50%;
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+    background-color: #ffffff;
+    color: #fff;
+    border: 6px solid #007d56;
+    box-sizing: content-box;
+}
+.single_img img{
+    margin: auto;
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+.text_primary{
+    color: #007d56;
+    font-size: 15px;
+    padding-top: 10px;
+}
+.single_list p{
+    padding-top: 10px;
+    color: #888888;
+    font-size: 13px;
+}
+.single_list ul{
+    padding-top: 10px;
+    color: #888888;
+    font-size: 13px;
+    line-height: 20px;
+}
+.promising_section{
+    margin-bottom: 50px;
+}
+
+.edu_section{
+    position: relative;
+    background: rgb(25,72,103);
+    background: -moz-linear-gradient(230deg, rgba(25,72,103,1) 0%, rgba(24,102,77,1) 42%, rgba(24,102,77,1) 100%);
+    background: -webkit-linear-gradient(230deg, rgba(25,72,103,1) 0%, rgba(24,102,77,1) 42%, rgba(24,102,77,1) 100%);
+    background: linear-gradient(230deg, rgba(25,72,103,1) 0%, rgba(24,102,77,1) 42%, rgba(24,102,77,1) 100%);
+    padding-bottom: 40px;
+}
+.section_Title3{
+    text-align: center;
+    color: #fff;
+    padding: 30px 0 80px 0;
+}
+.section_Title3 h2{
+    margin-top: 35px;
+    text-align: center;
+    color: #fff;
+    font-size: 27px;
+    margin-bottom: 30px;
+}
+.section_Title3 hr{
+    width: 300px;
+    height: 2px;
+    background-color: rgb(0 0 0 / 5%);
+    display: block;
+    position: absolute;
+    left: calc(50% - 240px);
+}
+
+.edu_table_section{
+    position: relative;
+    border: 2px solid rgb(0 0 0 / 21%);
+    border-radius: 20px;
+    background-color: rgb(255 255 255 / 10%);
+    box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 9%);
+    z-index: 2;
+    display: flex;
+    width: 1060px;
+    height: 554px;
+    margin: 0 auto;
+    /* margin-right: 180px; */
+}
+.edu_table_section table{
+    width: 100%;
+}
+
+.edu_table thead th{
+    text-align: center;
+    padding: 18px 10px;
+    background: rgb(25,72,103);
+    background: -moz-linear-gradient(230deg, rgba(25,72,103,1) 0%, rgba(24,102,77,1) 100%);
+    background: -webkit-linear-gradient(230deg, rgba(25,72,103,1) 0%, rgba(24,102,77,1) 100%);
+    background: linear-gradient(230deg, rgba(25,72,103,1) 0%, rgba(24,102,77,1) 100%);
+    padding: 20px;
+    border: 0;
+    font-size: 18px;
+    color: #c9f0f2;
+}
+.tr_head{
+    background-color: rgb(0 0 0 / 15%);
+}
+.tr_head td{
+    padding: 5px 3px;
+    color: #c9f0f2;
+}
+.tr_numbers td{
+    font-size: 21px;
+    font-weight: 700;
+    padding: 10px;
+    border: 0;
+    font-size: 18px;
+    color: #c9f0f2;
+}
