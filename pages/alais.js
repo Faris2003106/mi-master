@@ -1,22 +1,58 @@
 import governorate from '@/styles/cities.module.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faChartColumn} from "@fortawesome/free-solid-svg-icons";
 import PromisingSectors from './Promising _sectors';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import {faChartColumn} from "@fortawesome/free-solid-svg-icons";
+import Link from 'next/link';
+import React, { useRef, useState,useEffect } from 'react';
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
 
-export default function Yanbu(){
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/free-mode';
+import 'swiper/css/navigation';
+
+import { FreeMode, Navigation, Autoplay } from 'swiper/modules';
+
+const images = [
+    {image: '/images/cities/alais1.jpg'},
+    {image: '/images/cities/alais2.jpg'},
+    {image: '/images/cities/alais3.jpg'},
+];
+
+export default function Alais(){
+
+    const [isImageClicked, setIsImageClicked] = useState(false);
+    const [clickedImageIndex, setClickedImageIndex] = useState(null);
+
+    const handleImageClick = (index) => {
+        setClickedImageIndex(index);
+        setIsImageClicked(true);
+    };
+    
+    
+      const closeImageModal = () => {
+        setIsImageClicked(false);
+      };
+      
     return(
         <>
         <div className={governorate.about_City}>
             <div className={governorate.section_Title}>
-                <h2>محافظة ينبع</h2>
+                <h2>محافظة العيص</h2>
             </div>
             <div className={governorate.city_info}>
-                <img className={governorate.city_image} src='/images/cities/yanbu5.png'/>
+                <img className={governorate.city_image} src='/images/cities/alais.png'/>
                 <div className={governorate.city_paragraph}>
-                    <h2>نبذة تعريفية عن المنطقة</h2>
-                    <p>
-                    تعد ينبع حجر الزاوية في اقتصاد المملكة الصناعي لاحتضانها مشروع الهيئة الملكية بينبع والذي يعد أحد أهم التجمعات الصناعية بالمملكة، كما تعتبر أكبر مركز لتكرير النفط في العالم حيث يبلغ عدد مجمعات الصناعات الأساسية الضخمة بمدينة ينبع الصناعية (58) مجمعاً صناعياً، في حين يبلغ عدد الصناعات الخفيفة والمساندة (148) صناعة، مما جعل من مدينة ينبع الصناعية الخيار الأفضل للمستثمرين في مجال صناعة البتروكيماويات والصناعات كثيفة الاستخدام للطاقة فقد بلغ حجم الاستثمار الصناعي فيها (329) مليار ريال "
-                    وتعتبر محافظة ينبع الوجهة السياحية الخامسة على مستوى المملكة بما تتميز به من موقع استراتيجي على ساحل البحر الأحمر وبما تمتلكه من الموارد والإمكانات السياحية التي تدعم فرص نجاح الاستثمار السياحي في ظل تطور سياحة الشواطئ وزيادة إقبال السائحين على شواطئ البحر الأحمر، وهذه الموارد والإمكانات السياحية المتميزة تشكل أسس وأنماط تنمية سياحية متعددة ومستدامة.                    
+                    <h2>نبذة تعريفية عن المنطقة</h2>                    
+                    <p>                    
+                    تعد العيص واحة غناء حيث تتشابك جبال العيص ذات السفوح المنحدرة مع عدد من الأودية التي تشكل روافد مهمة لوادي (العيص) وأهم جبالها أبوالكثة، وترعة، والأجرد، ورضوة، وهشام، والسلع، والمقنع، والراقب، وحبيشي.
+                    <br/>                                                            
+                    وتحتوي العيص على عدد من الآثار التي تجسد عراقة المكان كما ارتبطت المحافظة بالنخيل فمعنى العيص وفقا لكتابات المؤرخين هو منبت خيار الشجر مثل السدر والنخيل والعوسج إذا تدانى والتف.
+                    <br/>                    
+                    ويتخلل جبالها عدة أودية مهمة منها وادي ترعة، ووادي عرفة، ووادي أرن، ووادي اللحيان، ووادي حجج، ووادي الحفير، ووادي الصفيحة، ووادي سل، ووادي الرماس، وغيرها، كما توجد حرة العيص التي تعد الخزان المستديم للمياه للمنطقة، ويبلغ طولها من الشرق إلى الغرب حوالي 60 كيلومتراً ومن الشمال إلى الجنوب حوالى 25 كيلومتراً.
+                    <br/>                    
+                    وتلتف السهول والرياض عند التقاء الأودية بالحرة، وبعضها تكون بالحرة نفسها، وهذه السهول والرياض تزرع بعد هطول الأمطار الشتوية، ومنها سهول الشيحة، والحبانية، وسمر، والديسة، والقاع، والبرشمية، ورياض قعود، ورياض براد.                    
                     </p>
                 </div>
             </div>
@@ -31,40 +67,40 @@ export default function Yanbu(){
                     <img src='/images/Indicators/indication-1.png'/>
                 </div>
                 <h4>مساحة المنطقة</h4>
-                <h6 className={governorate.text_primary}>مساحتها الكلية 10.680 كم2 .</h6>
+                <h6 className={governorate.text_primary}>مساحتها الكلية (11.256) ألف كم2 .</h6>
             </div>
             <div className={governorate.single_list}>
                 <div className={governorate.single_img}>
                     <img src='/images/Indicators/indication-2.png'/>
                 </div>
                 <h4>عدد المراكز</h4>
-                <h6 className={governorate.text_primary}>11 مركز</h6>
+                <h6 className={governorate.text_primary}>10 مركز</h6>
             </div>
             <div className={governorate.single_list}>
                 <div className={governorate.single_img}>
                     <img src='/images/Indicators/indication-3.png'/>
                 </div>
                 <h4>عدد السكان</h4>
-                <h6 className={governorate.text_primary}>المجموع |  357671 سعودي ومقيم  </h6>
-                <p>سعودي | <strong>0</strong>   غير سعودي | <strong>0</strong></p>
+                <h6 className={governorate.text_primary}>33.185 سعودي ومقيم</h6>
+                {/* <p>سعودي | <strong>0</strong>   غير سعودي | <strong>0</strong></p> */}
             </div>
             <div className={governorate.single_list}>
                 <div className={governorate.single_img}>
                     <img src='/images/Indicators/indication-4.png'/>
                 </div>
                 <h4>عدد الأنشطة</h4>
-                <h6 className={governorate.text_primary}>288888 مؤسسة تجاية</h6>
+                <h6 className={governorate.text_primary}>0 أنشطة</h6>
             </div>
             <div className={governorate.single_list}>
                 <div className={governorate.single_img}>
                     <img src='/images/Indicators/indication-5.png'/>
                 </div>
                 <h4>الخدمات الصحية</h4>
-                <h6 className={governorate.text_primary}>64 منشأة حكومية وخاصة</h6>
+                <h6 className={governorate.text_primary}>11 منشأة حكومية وخاصة</h6>
                 <ul>
-                    <li>الكادر الطبي | <strong>690</strong></li>
-                    <li>الكادر الفني | <strong>1362</strong></li>
-                    <li>عدد الأسرة | <strong>882</strong></li>
+                    <li>الكادر الطبي | <strong>59</strong></li>
+                    <li>الكادر الفني | <strong>113</strong></li>
+                    <li>عدد الأسرة | <strong>غ.م</strong></li>
                 </ul>
             </div>
             <div className={governorate.single_list}>
@@ -72,21 +108,21 @@ export default function Yanbu(){
                     <img src='/images/Indicators/indication-6.png'/>
                 </div>
                 <h4>جمعيات الخيرية</h4>
-                <h6 className={governorate.text_primary}>13 جمعية خيرية</h6>
+                <h6 className={governorate.text_primary}>6 جمعية خيرية</h6>
             </div>
             <div className={governorate.single_list}>
                 <div className={governorate.single_img}>
                     <img src='/images/Indicators/indication-7.png'/>
                 </div>
                 <h4>الدوائر الحكومية</h4>
-                <h6 className={governorate.text_primary}>30 دائرة حكومية</h6>
+                <h6 className={governorate.text_primary}>14 دائرة حكومية</h6>
             </div>
             <div className={governorate.single_list}>
                 <div className={governorate.single_img}>
                     <img src='/images/Indicators/indication-8.png'/>
                 </div>
                 <h4>مجموع الشركات</h4>
-                <h6 className={governorate.text_primary}>2020 شركة</h6>
+                <h6 className={governorate.text_primary}>0 شركة</h6>
             </div>
         </div>
         </div>
@@ -117,11 +153,11 @@ export default function Yanbu(){
                             <td>المجموع</td>
                         </tr>
                         <tr className={governorate.tr_numbers}>
-                            <td>32022</td>
-                            <td>37715</td>
-                            <td>6270</td>
-                            <td>1702</td>
-                            <td>77709</td>
+                            <td>6579</td>
+                            <td>7641</td>
+                            <td>1522</td>
+                            <td>396</td>
+                            <td>16138</td>
                         </tr>
                     </tbody>
                     <thead>
@@ -140,11 +176,11 @@ export default function Yanbu(){
                             <td>المجموع</td>
                         </tr>
                         <tr className={governorate.tr_numbers}>
-                            <td>279</td>
-                            <td>3958</td>
-                            <td>6278</td>
+                            <td>39</td>
+                            <td>206</td>
+                            <td>346</td>
                             <td>غ.م</td>
-                            <td>10515</td>
+                            <td>591</td>
                         </tr>
                     </tbody>
                     <thead>
@@ -163,9 +199,9 @@ export default function Yanbu(){
                         </tr>
                         <tr className={governorate.tr_numbers}>
                             <td>غ.م</td>
-                            <td>1417</td>
+                            <td>587</td>
                             <td colspan="2">غ.م</td>
-                            <td>1417</td>
+                            <td>587</td>
                         </tr>
                     </tbody>
                 </table>
@@ -194,14 +230,58 @@ export default function Yanbu(){
                             <td>المجموع</td>
                         </tr>
                         <tr className={governorate.tr_numbers}>
-                            <td>690</td>
-                            <td>1362</td>
+                            <td>100</td>
+                            <td>135</td>
                             <td>غ.م</td>
-                            <td>2052</td>
+                            <td>235</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
+        </div>
+        <div className={governorate.album_section}>
+            <div className={governorate.section_Title3}>
+                <h2>ألبوم الصور</h2>
+                <hr/>
+                {/* <FontAwesomeIcon icon={faChartColumn} className={governorate.icon} /> */}
+            </div>
+        
+            <Swiper
+            slidesPerView={2}
+            navigation={true}
+            freeMode={true}
+            loop={true}
+            modules={[FreeMode, Navigation,Autoplay]}
+            className="mySwiper"
+            autoplay={{
+                delay:1000,
+                disableOnInteraction: false,
+            }}
+            speed={1200}
+            >
+                {
+                    isImageClicked && clickedImageIndex !== null && (
+                        <div className={governorate.image_modal}>
+                            <div className={governorate.image_modal_content}>
+                                <span className={governorate.close} onClick={closeImageModal}>&times;</span>
+                                
+                                    <img className={governorate.image_modal_content_In_model} src={images[clickedImageIndex].image} style={{width: "700px"}}/>
+                                
+                            </div>
+                        </div>
+                    )}
+                    
+            <div className={governorate.images_list}>
+                {images.map((slide, index) => (
+                        
+                <SwiperSlide key={slide.id}>
+                    <div onClick={() => handleImageClick(index)} className="main_image_modal">
+                        <img className={governorate.swiper_img} src={slide.image} />
+                    </div>
+                </SwiperSlide>
+                    ))}
+            </div>
+            </Swiper>
         </div>
         </>
     )

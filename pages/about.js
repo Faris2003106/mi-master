@@ -13,7 +13,7 @@ export default function About(){
         <div className="Single_img">
             <img src="/images/About Us/about_img.png"/>
             <div className="single-inner">
-                <h1>
+                <h1 className="text-3xl">
                     بوابة استثمارات المدينة المنورة
                     <hr/>
                 </h1>

@@ -19,6 +19,7 @@ export default function HeaderSwiper(){
             delay:2500,
             disableOnInteraction: false,
         }}
+        speed={2000}
         className='mySwiper'
 
     >
@@ -35,10 +36,10 @@ function Slide1(){
         <section className='heder-slide'>
         <div className='hero-bg'>
         <img src='/images/img_04.png'/>
-        <div className='carousel__overlay'>
+        <div className='carousel__overlay'></div>
         <div className='hero-title'><h2>قطاعات واعدة</h2></div>
         <button className='hero-btn'>إكتشف المزيد</button>
-        </div>
+        
         </div>
     </section>
     </>
@@ -50,10 +51,10 @@ function Slide2(){
         <section className='heder-slide'>
         <div className='hero-bg'>
         <img src='/images/img_02.png'/>
-        <div className='carousel__overlay'>
+        <div className='carousel__overlay'></div>
         <div className='hero-title'><h2>مزايا الاستثمار</h2></div>
         <button className='hero-btn'>إكتشف المزيد</button>
-        </div>
+        
         </div>
     </section>
     </>
@@ -65,10 +66,10 @@ function Slide3(){
         <section className='heder-slide'>
         <div className='hero-bg'>
         <img src='/images/img_03.png'/>
-        <div className='carousel__overlay'>
+        <div className='carousel__overlay'></div>
         <div className='hero-title'><h2>فرص استثمارية</h2></div>
         <button className='hero-btn'>إكتشف المزيد</button>
-        </div>
+        
         </div>
     </section>
         </>

@@ -27,7 +27,7 @@ export default function GovernoratesPage() {
             سميت العلا بعدة أسماء قبل الاستقرار على اسمها الحالي، ففي القرن السادس قبل الميلاد سُميت بـ ديدان.
             </p>
             <div style={{marginTop: "48px"}}>
-                <a href='#' className={governoratesStyle.governorates_btn}>شاهد المزيد</a>
+            <Link href="alola" className={governoratesStyle.governorates_btn}>شاهد المزيد</Link>
             </div>
             </div>
         </div>
@@ -41,7 +41,7 @@ export default function GovernoratesPage() {
             تقع على ساحل البحر الأحمر في إقليم تهامة تبعد حوالي 200 كم غرب المدينة المنورة.
             </p>
             <div style={{marginTop: "48px"}}>
-                <a href='#' className={governoratesStyle.governorates_btn}>شاهد المزيد</a>
+            <Link href="alhanikea" className={governoratesStyle.governorates_btn}>شاهد المزيد</Link>
             </div>
             </div>
         </div>
@@ -55,7 +55,7 @@ export default function GovernoratesPage() {
             تعرف أيضا (بالمهد)، وقديما كانت تعرف باسم (معدن بني سليم)، هي إحدى محافظات منطقة المدينة المنورة.                           
             </p>
             <div style={{marginTop: "48px"}}>
-                <a href='#' className={governoratesStyle.governorates_btn}>شاهد المزيد</a>
+            <Link href="almahd" className={governoratesStyle.governorates_btn}>شاهد المزيد</Link>
             </div>
             </div>
         </div>
@@ -68,7 +68,7 @@ export default function GovernoratesPage() {
             <p className={governoratesStyle.card_text}>                
             بوابة نجد الشرقية هي محافظة سعودية في منطقة المدينة المنورة وهي ثالث أكبر محافظة في منطقة المدينة المنورة بعد العاصمة الإدارية المدينة المنورة                                      </p>
             <div style={{marginTop: "48px"}}>
-                <a href='#' className={governoratesStyle.governorates_btn}>شاهد المزيد</a>
+            <Link href="khibar" className={governoratesStyle.governorates_btn}>شاهد المزيد</Link>
             </div>
             </div>
         </div>
@@ -81,7 +81,7 @@ export default function GovernoratesPage() {
             <p className={governoratesStyle.card_text}>                
             هي إحدى محافظات منطقة المدينة المنورة وهي غنية بالكثير من المعالم والشواهد والقيم التاريخية ومن المناطق الزراعية والسياحية                                      </p>
             <div style={{marginTop: "48px"}}>
-                <a href='#' className={governoratesStyle.governorates_btn}>شاهد المزيد</a>
+            <Link href="badr" className={governoratesStyle.governorates_btn}>شاهد المزيد</Link>
             </div>
             </div>
         </div>
@@ -95,7 +95,7 @@ export default function GovernoratesPage() {
             مدينة تابعة للمدينة المنورة وتصنف كمحافظة من الفئة (ب). وتبلغ مساحتها التقريبية 28630 كيلومتراً معظمها مرتفعات جبلية وأودية ومجاري سيول تتميز بكثرة النخيل الذي ينتج من أجود التمور في المنطقة
             </p>
             <div style={{marginTop: "48px"}}>
-                <a href='#' className={governoratesStyle.governorates_btn}>شاهد المزيد</a>
+            <Link href="alais" className={governoratesStyle.governorates_btn}>شاهد المزيد</Link>
             </div>
             </div>
         </div>
@@ -109,7 +109,7 @@ export default function GovernoratesPage() {
             تقع محافظة وادي الفرع جنوب المدينة المنورة، ومركزها الآن (الفقير) على بعد 140 كلم على الطريق السريع بين المدينة المنورة ومكة المكرمة
             </p>
             <div style={{marginTop: "48px"}}>
-                <a href='#' className={governoratesStyle.governorates_btn}>شاهد المزيد</a>
+            <Link href="wadialfara" className={governoratesStyle.governorates_btn}>شاهد المزيد</Link>
             </div>
             </div>
         </div>
