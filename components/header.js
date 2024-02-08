@@ -62,13 +62,13 @@ export default function Header() {
         </div>
         <hr/>
         <div className={`header ${active ? 'active' : ''}`}>
-        <a href='#' className='logo'>
+        <Link href="/" className='logo'>
         {active ? (
             <img src='/images/mi.png' alt='Logo' />
         ) : (
             <img src='/images/MI_Logo_WH.png' alt='Logo' />
         )}
-        </a>
+        </Link>
         <input type='checkbox' id='menu-bar'/>
         <label for="menu-bar" id='menu-bar-label'>Menu</label>
     <nav className='navbar'>
@@ -84,7 +84,7 @@ export default function Header() {
             </li>
             <li><a>القطاعات +</a>
                 <ul className='drop-down'>
-                    <li><a href='#'>القطاعات الاقتصادية</a></li>
+                    <li><Link href='economic_sectors'>القطاعات الاقتصادية</Link></li>
                     <li><a>القطاعات الواعدة +</a>
                     <ul className='drop-down'>
                         <li><a href='#'>القطاع الصناعي</a></li>
@@ -100,7 +100,7 @@ export default function Header() {
             </li>
             <li><Link href="secondHeader">الفرص الاستثمارية</Link></li>
             <li><a href='#'>خارطة الفرص الاستثمارية</a></li>
-            <li><a href='#'>المكتبة الاقتصادية</a></li>
+            <li><Link href="economicLibrary">المكتبة الاقتصادية</Link></li>
             <li><a href='#'>تواصل معنا</a></li>
         </ul>
         

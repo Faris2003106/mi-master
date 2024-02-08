@@ -204,7 +204,7 @@ useEffect(() => {
         }
     });
     }
-  });
+});
     return(
         <>
         <div className="medina_region">

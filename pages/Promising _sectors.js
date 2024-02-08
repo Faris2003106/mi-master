@@ -72,87 +72,82 @@ export default function PromisingSectors() {
           className="swiper-container2"
         >
           <SwiperSlide>
-            <div class="promising_card">              
-                <a href="#"></a>
-                <div className="icon-box">
-                  <a href="#">
+            <a href="#">
+            <div class="promising_card">                              
+                <div className="icon-box">                  
                     <div className="icon">
                       <FontAwesomeIcon icon={faPaintRoller} />
-                    </div>
-                  </a>
+                    </div>                
                   <h4>
-                    <a href="#">أنشطة تجارة الجملة والتجزئة</a>
+                    أنشطة تجارة الجملة والتجزئة
                   </h4>
                   <p>وتشمل ( البيع بالجملة والتجزئة لجميع السلع)</p>
                 </div>              
             </div>
+            </a>
           </SwiperSlide>
           <SwiperSlide>
-            <div class="promising_card">              
-                <a href="#"></a>
-                <div className="icon-box">
-                  <a href="#">
+          <a href="#">
+            <div class="promising_card">                              
+                <div className="icon-box">                  
                     <div className="icon">
                       <FontAwesomeIcon icon={faPaintRoller} />
-                    </div>
-                  </a>
+                    </div>                
                   <h4>
-                    <a href="#">أنشطة تجارة الجملة والتجزئة</a>
+                    أنشطة تجارة الجملة والتجزئة
                   </h4>
                   <p>وتشمل ( البيع بالجملة والتجزئة لجميع السلع)</p>
-                </div>
-              </div>
-          </SwiperSlide>
-
-          <SwiperSlide>
-            <div class="promising_card">
-                <a href="#"></a>
-                <div className="icon-box">
-                  <a href="#">
-                    <div className="icon">
-                      <FontAwesomeIcon icon={faPaintRoller} />
-                    </div>
-                  </a>
-                  <h4>
-                    <a href="#">أنشطة تجارة الجملة والتجزئة</a>
-                  </h4>
-                  <p>وتشمل ( البيع بالجملة والتجزئة لجميع السلع)</p>
-                </div>
-              </div>
+                </div>              
+            </div>
+            </a>
           </SwiperSlide>
 
           <SwiperSlide>
-            <div class="promising_card">
-                <a href="#"></a>
-                <div className="icon-box">
-                  <a href="#">
+          <a href="#">
+            <div class="promising_card">                              
+                <div className="icon-box">                  
                     <div className="icon">
                       <FontAwesomeIcon icon={faPaintRoller} />
-                    </div>
-                  </a>
+                    </div>                
                   <h4>
-                    <a href="#">أنشطة تجارة الجملة والتجزئة</a>
+                    أنشطة تجارة الجملة والتجزئة
                   </h4>
                   <p>وتشمل ( البيع بالجملة والتجزئة لجميع السلع)</p>
-                </div>
-              </div>
+                </div>              
+            </div>
+            </a>
           </SwiperSlide>
 
           <SwiperSlide>
-            <div class="promising_card">
-                <a href="#"></a>
-                <div className="icon-box">
-                  <a href="#">
+          <a href="#">
+            <div class="promising_card">                              
+                <div className="icon-box">                  
                     <div className="icon">
                       <FontAwesomeIcon icon={faPaintRoller} />
-                    </div>
-                  </a>
+                    </div>                
                   <h4>
-                    <a href="#">أنشطة تجارة الجملة والتجزئة</a>
+                    أنشطة تجارة الجملة والتجزئة
                   </h4>
                   <p>وتشمل ( البيع بالجملة والتجزئة لجميع السلع)</p>
-                </div>
-              </div>
+                </div>              
+            </div>
+            </a>
+          </SwiperSlide>
+
+          <SwiperSlide>
+          <a href="#">
+            <div class="promising_card">                              
+                <div className="icon-box">                  
+                    <div className="icon">
+                      <FontAwesomeIcon icon={faPaintRoller} />
+                    </div>                
+                  <h4>
+                    أنشطة تجارة الجملة والتجزئة
+                  </h4>
+                  <p>وتشمل ( البيع بالجملة والتجزئة لجميع السلع)</p>
+                </div>              
+            </div>
+            </a>
           </SwiperSlide>
         </Swiper> 
       </section>

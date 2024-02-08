@@ -1,6 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@font-face {
+  font-family: 'Alexandria';
+  src: url('../public/fonts/Alexandria/static/Alexandria-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
 @import url("https://fonts.googleapis.com/css2?family=Alexandria:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 * {
@@ -905,7 +911,6 @@ h2.section-title {
   transition: all 0.3s ease-out 0s;
   display: flex;
   align-items: center;
-  justify-content: center;
   border-radius: 50%;
   transform-style: preserve-3d;
 }
@@ -936,7 +941,7 @@ h2.section-title {
 .promising_card:hover {
   background: linear-gradient(309.62deg, #007d5680 10.45%, #002a56 100.78%);
 }
-.promising_card .icon-box:hover .icon {
+.promising_card .icon-box .icon:hover  {
   background: #fff;
   color: #007d56;
 }
@@ -1635,4 +1640,11 @@ label.active-label{
   height: 500px;
   margin-right: 15%;
   margin-bottom: 5%;
+}
+
+
+.custom-background {
+  background-image: linear-gradient(0deg, #000 0%, #0000 33.33%, #000 66.66%, #fff0 99.99%);
+  background-size: 300% 300%;
+  background-position: 0% 100%;
 }
