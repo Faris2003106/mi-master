@@ -15,7 +15,9 @@ module.exports = {
       fontFamily: {
         alexandria: ['Alexandria', 'serif']
       },
-      
+      screens: {
+        '414': {'max': '414px'},
+      },
     },
   },
   darkMode: "class",

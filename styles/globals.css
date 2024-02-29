@@ -1641,10 +1641,210 @@ label.active-label{
   margin-right: 15%;
   margin-bottom: 5%;
 }
-
-
 .custom-background {
   background-image: linear-gradient(0deg, #000 0%, #0000 33.33%, #000 66.66%, #fff0 99.99%);
   background-size: 300% 300%;
   background-position: 0% 100%;
+}
+
+/* investment opportunities chart */
+
+.continer-main-pie2{
+  display: flex;
+  /* background: #000; */
+  align-items: end;
+  justify-content: space-around;
+}
+
+
+.main-pie h2 {
+  text-align: center;
+  font-size: 20px;
+  line-height: 30px;
+  color : #003366
+}
+.main-pie{
+  /* background: #6b7280; */
+  max-width: 200px;
+  width: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: space-around;
+  padding-top: 25px;
+}
+@property --p{
+  syntax: '<number>';
+  inherits: true;
+  initial-value: 1;
+}
+.pie-inner h5{
+  text-align: center;
+  z-index: 99;
+  font-size: 12px;
+}
+
+.pie {
+  --p:50;
+  --b:8px;
+  --c:#007d56;
+  --w:120px;
+  
+  width:var(--w);
+  aspect-ratio:1;
+  position:relative;
+  display:inline-grid;
+  margin:10px;
+  place-content:center;
+  font-size:25px;
+  font-weight:bold;
+  
+}
+.pie:before,
+.pie:after {
+  content:"";
+  position:absolute;
+  border-radius:50%;
+  
+}
+.pie:before {
+  inset:0;
+  background:
+    radial-gradient(farthest-side,var(--c) 98%,#0000) top/var(--b) var(--b) no-repeat,
+    conic-gradient(var(--c) calc(var(--p)*1%),#0000 0);
+  -webkit-mask:radial-gradient(farthest-side,#0000 calc(99% - var(--b)),#000 calc(100% - var(--b)));
+          mask:radial-gradient(farthest-side,#0000 calc(99% - var(--b)),#000 calc(100% - var(--b)));
+}
+.pie:after {
+  inset:calc(50% - var(--b)/2);
+  background:var(--c);
+  transform:rotate(calc(var(--p)*3.6deg)) translateY(calc(50% - var(--w)/2));
+}
+.animate {
+  animation:p 1s .5s both;
+}
+.no-round:before {
+  background-size:0 0,auto;
+}
+.no-round:after {
+  content:none;
+}
+@keyframes p {
+  from{--p:0}
+}
+
+
+/* ::Before sytle of the nav-link in the opportunity Details Page  */
+
+.nav-link::before{
+  content: '';
+  display: block;
+  border-top: 8px solid #0000;
+  border-left: 0;
+  border-right: 10px solid #007d56;
+  border-bottom: 8px solid #0000;
+  position: absolute;
+  top: 50%;
+  right: auto;
+  left: -10px;
+  transform: translateY(-50%);
+  opacity: 1;
+}
+
+/* Opportunity Details modal styles */
+@media (max-width: 414px) {
+  
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: #fff;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  max-width: 70rem; /* Increase the max-width value to make the modal wider */
+  width: 100%;
+  box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.modal-body {
+  margin-bottom: 1.5rem;
+}
+
+.modal-footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+/* Close button styles */
+.modal-header button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  padding: 0.5rem;
+  border-radius: 0.375rem;
+}
+
+.modal-header button:hover {
+  background-color: #e5e7eb;
+}
+
+/* Button styles */
+.modal-footer button {
+  padding: 0.625rem 1.25rem;
+  font-size: 0.875rem;
+  border-radius: 0.375rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.modal-footer button:hover {
+  background-color: #edf2f7;
+}
+
+/* Dark mode styles */
+.dark .modal-content {
+  background-color: #374151;
+  color: #fff;
+  box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.25);
+}
+
+.dark .modal-header button {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.dark .modal-header button:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.dark .modal-footer button {
+  background-color: #1d4ed8;
+}
+
+.dark .modal-footer button:hover {
+  background-color: #2563eb;
 }

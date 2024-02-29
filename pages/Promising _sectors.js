@@ -32,19 +32,19 @@ export default function PromisingSectors() {
       <section className="invest_oppor">
         <div className="container1">
           <h2 className="section-title2">
-            <span>القطاعات الواعدة</span>
+            <span>القطاعات الاقتصادية</span>
           </h2>
           <div>
-            <a className="investbtn2" href="#">عرض الكل</a>
+            <Link className="investbtn2" href="economic_sectors">عرض الكل</Link>
             <div className="owl-custom-control">
-                    <button type="button" role="presentation" className="owl-prev swiper-prev" onClick={goPrev}>
-                    <FontAwesomeIcon icon={faChevronRight} />
-                    </button>
-                    <button type="button" role="presentation" className="owl-prev swiper-next" onClick={goNext}>
-                    <FontAwesomeIcon icon={faChevronLeft} />
-                    </button>
+              <button type="button" role="presentation" className="owl-prev swiper-prev" onClick={goPrev}>
+                <FontAwesomeIcon icon={faChevronRight} />
+              </button>
+              <button type="button" role="presentation" className="owl-prev swiper-next" onClick={goNext}>
+                <FontAwesomeIcon icon={faChevronLeft} />
+              </button>
             </div>
-          </div> 
+          </div>
         </div>
         <Swiper
           slidesPerView={4}
@@ -61,95 +61,95 @@ export default function PromisingSectors() {
             1440: {
               slidesPerView: 4,
               spaceBetween: 10
-          },
-          414: {
+            },
+            414: {
               slidesPerView: 1,
               spaceBetween: 0
+            }
           }
-        }
-        }
+          }
           modules={[Pagination]}
           className="swiper-container2"
         >
           <SwiperSlide>
             <a href="#">
-            <div class="promising_card">                              
-                <div className="icon-box">                  
-                    <div className="icon">
-                      <FontAwesomeIcon icon={faPaintRoller} />
-                    </div>                
+              <div class="promising_card">
+                <div className="icon-box">
+                  <div className="icon">
+                    <FontAwesomeIcon icon={faPaintRoller} />
+                  </div>
                   <h4>
                     أنشطة تجارة الجملة والتجزئة
                   </h4>
                   <p>وتشمل ( البيع بالجملة والتجزئة لجميع السلع)</p>
-                </div>              
-            </div>
+                </div>
+              </div>
             </a>
           </SwiperSlide>
           <SwiperSlide>
-          <a href="#">
-            <div class="promising_card">                              
-                <div className="icon-box">                  
-                    <div className="icon">
-                      <FontAwesomeIcon icon={faPaintRoller} />
-                    </div>                
+            <a href="#">
+              <div class="promising_card">
+                <div className="icon-box">
+                  <div className="icon">
+                    <FontAwesomeIcon icon={faPaintRoller} />
+                  </div>
                   <h4>
                     أنشطة تجارة الجملة والتجزئة
                   </h4>
                   <p>وتشمل ( البيع بالجملة والتجزئة لجميع السلع)</p>
-                </div>              
-            </div>
+                </div>
+              </div>
             </a>
           </SwiperSlide>
 
           <SwiperSlide>
-          <a href="#">
-            <div class="promising_card">                              
-                <div className="icon-box">                  
-                    <div className="icon">
-                      <FontAwesomeIcon icon={faPaintRoller} />
-                    </div>                
+            <a href="#">
+              <div class="promising_card">
+                <div className="icon-box">
+                  <div className="icon">
+                    <FontAwesomeIcon icon={faPaintRoller} />
+                  </div>
                   <h4>
                     أنشطة تجارة الجملة والتجزئة
                   </h4>
                   <p>وتشمل ( البيع بالجملة والتجزئة لجميع السلع)</p>
-                </div>              
-            </div>
+                </div>
+              </div>
             </a>
           </SwiperSlide>
 
           <SwiperSlide>
-          <a href="#">
-            <div class="promising_card">                              
-                <div className="icon-box">                  
-                    <div className="icon">
-                      <FontAwesomeIcon icon={faPaintRoller} />
-                    </div>                
+            <a href="#">
+              <div class="promising_card">
+                <div className="icon-box">
+                  <div className="icon">
+                    <FontAwesomeIcon icon={faPaintRoller} />
+                  </div>
                   <h4>
                     أنشطة تجارة الجملة والتجزئة
                   </h4>
                   <p>وتشمل ( البيع بالجملة والتجزئة لجميع السلع)</p>
-                </div>              
-            </div>
+                </div>
+              </div>
             </a>
           </SwiperSlide>
 
           <SwiperSlide>
-          <a href="#">
-            <div class="promising_card">                              
-                <div className="icon-box">                  
-                    <div className="icon">
-                      <FontAwesomeIcon icon={faPaintRoller} />
-                    </div>                
+            <a href="#">
+              <div class="promising_card">
+                <div className="icon-box">
+                  <div className="icon">
+                    <FontAwesomeIcon icon={faPaintRoller} />
+                  </div>
                   <h4>
                     أنشطة تجارة الجملة والتجزئة
                   </h4>
                   <p>وتشمل ( البيع بالجملة والتجزئة لجميع السلع)</p>
-                </div>              
-            </div>
+                </div>
+              </div>
             </a>
           </SwiperSlide>
-        </Swiper> 
+        </Swiper>
       </section>
     </>
   );

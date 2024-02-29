@@ -1,4 +1,4 @@
-
+import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTwitter, faFacebook, faInstagram, faLinkedin,faPhone,faEnvelope } from '@fortawesome/free-brands-svg-icons';
 
@@ -29,7 +29,7 @@ export default function Footer() {
                                     <ul>
                                         <li><a href="#">سياسة الخصوصية</a></li>
                                         <li><a href="#">الشروط و الأحكام</a></li>
-                                        <li><a href="#">الفرص الاستثمارية</a></li>
+                                        <li><Link href="investment_opportunities">الفرص الاستثمارية</Link></li>
                                         <li><a href="#">مزايا الاستثمار</a></li>
                                     </ul>
                                 </div>
@@ -38,9 +38,9 @@ export default function Footer() {
                                 <div className="single-footer f-link">
                                     <h3>خدماتنا</h3>
                                     <ul>
-                                        <li><a href="#">تسجيل الدخول</a></li>
-                                        <li><a href="#">تسجيل</a></li>
-                                        <li><a href="#">القطاعات الواعدة</a></li>
+                                        <li><Link href="login">تسجيل الدخول</Link></li>
+                                        <li><Link href="register">تسجيل</Link></li>
+                                        <li><Link href="economic_sectors">القطاعات الواعدة</Link></li>
                                         <li><a href="#">الدراسات الإقتصادية</a></li>
                                     </ul>
                                 </div>

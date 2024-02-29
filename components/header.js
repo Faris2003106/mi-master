@@ -98,15 +98,15 @@ export default function Header() {
                     </li>
                 </ul>
             </li>
-            <li><Link href="secondHeader">الفرص الاستثمارية</Link></li>
+            <li><Link href="investment_opportunities">الفرص الاستثمارية</Link></li>
             <li><a href='#'>خارطة الفرص الاستثمارية</a></li>
             <li><Link href="economicLibrary">المكتبة الاقتصادية</Link></li>
-            <li><a href='#'>تواصل معنا</a></li>
+            <li><Link href='contact'>تواصل معنا</Link></li>
         </ul>
         
         </nav>
         { <div>
-            <a href='#' className='navbtn'>تسجيل</a>
+            <Link href='register' className='navbtn'>تسجيل</Link>
             </div>}
     </div>
     </header>
